@@ -25,7 +25,7 @@
                         <a class="nav-link @if(Route::currentRouteName() == 'welcome') active @endif" aria-current="page" href="{{ route('welcome') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="{{ route('showForm') }}">Link</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
