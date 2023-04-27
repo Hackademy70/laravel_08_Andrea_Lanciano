@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>{{ $title ?? 'FlixFlex' }}</title>
+    {{-- Font Awesome --}}
+    <script src="https://kit.fontawesome.com/05cf7470eb.js" crossorigin="anonymous"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
@@ -33,15 +35,12 @@
                 @if (Auth::user() != null)
                 <form action="{{ route('logout') }}" method="post">
                 @csrf
-                <button class="btn btn-primary" type="submit">Logout</button>
+                <button class="my-btn" type="submit">Logout  <i class="fa-solid fa-arrow-right-from-bracket"></i></i></button>
                 </form>
                 @else
                 <ul class="navbar-nav mb-2 mb-lg-0 text-center">
                     <li class="nav-item">
-                        <a class="nav-link text-light @if(Route::currentRouteName() == 'register') my-active @endif" href="{{ route('register') }}">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light @if(Route::currentRouteName() == 'login') my-active @endif" href="{{ route('login') }}">Login</a>
+                        <a class="nav-link text-light @if(Route::currentRouteName() == 'login') my-not-active @endif" href="{{ route('login') }}">Login<i class="ms-1 my-icon fa-solid fa-arrow-right-to-bracket"></i></a>
                     </li>
                 </ul>
                 @endif

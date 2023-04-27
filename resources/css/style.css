@@ -3,6 +3,9 @@ body{
     background-color: #2f2f2f;
     color: white;
 }
+.my-icon{
+    font-size: 15px;
+}
 .my-bold-text{
     font-weight: 800;
 }
@@ -12,6 +15,9 @@ body{
 }
 .my-active{
     color: red !important;
+}
+.my-not-active{
+    display: none;
 }
 .my-bg{
     background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('/public/media/bg-home-guest.jpg') no-repeat;

@@ -1,5 +1,8 @@
 <x-layout>
-    @auth
+    {{-- Title page --}}
+    <x-slot name="title">Add a movie - FlexFlix</x-slot>
+    {{-- End title page --}}
+    {{-- Start the form --}}
     <div class="container mt-5 mb-3">
             <h1 class="my-bold-text">Add your favorite movie!</h1>
             <div class="row mt-3">
@@ -34,9 +37,4 @@
                 </div>
             </div>
         </div>
-
-    @endauth
-    @guest
-        <h1 class="bg-danger">hello</h1>
-    @endguest
 </x-layout>
