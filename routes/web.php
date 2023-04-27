@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\PublicController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,8 @@ use App\Http\Controllers\MovieController;
 Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
+
+Route::get('/start', [PublicController::class, 'start'])->name('start');
 
 Route::get('formCreate', [MovieController::class, 'showForm'])->name('showForm');
 

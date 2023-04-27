@@ -13,7 +13,7 @@
     {{-- NavBar --}}
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ route('welcome') }}">BooBFLeX</a>
+            <a class="navbar-brand" href="{{ route('welcome') }}">FlixFlex</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -24,9 +24,11 @@
                     <li class="nav-item">
                         <a class="nav-link @if(Route::currentRouteName() == 'welcome') active @endif" aria-current="page" href="{{ route('welcome') }}">Home</a>
                     </li>
+                    @auth
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('showForm') }}">Add a movie</a>
+                        <a class="nav-link @if(Route::currentRouteName() == 'showForm') active @endif" href="{{ route('showForm') }}">Add a movie</a>
                     </li>
+                    @endauth
                 </ul>
                 @if (Auth::user() != null)
                 <form action="{{ route('logout') }}" method="post">

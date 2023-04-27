@@ -1,0 +1,44 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+.my-bg{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('/public/media/bg-home-guest.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.col-12 > h1{
+    font-weight: 900;
+}
+.col-12 > h4{
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.my-btn{
+    font-size: 16px;
+    background-color: red;
+    border: red solid 1px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    color: white;
+    font-weight: 800;
+    margin-left: 5px;
+}
+.css-input {
+    width: 60%;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #cccccc;
+    border-style: solid;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    caret-color: #CCCCCC;
+}
+.css-input:focus {
+    outline:none;
+}

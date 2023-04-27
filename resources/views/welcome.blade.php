@@ -5,37 +5,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                    {{-- Insert a Movie --}}
-                    <form method="post" action="{{ route('add.movie') }}">
-                        @csrf
-                        <div class="mb-3">
-                            <label for="movieTitle" class="form-label">Title</label>
-                            <input type="text" class="form-control" name="movieTitle" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                            <label for="genre" class="form-label">genre</label>
-                            <input type="text" class="form-control" name="genre" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                            <label for="movieDescription" class="form-label"></label>
-                            <textarea name="movieDescription" cols="30" rows="10"></textarea>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="number" name="movieDuration">
-                            <label class="form-check-label" for="movieDuration">duration</label>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="number" name="pegi">
-                            <label class="form-check-label" for="pegi">pegi</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
                 </div>
             </div>
         </div>
 
     @endauth
     @guest
-        <h1 class="bg-danger">hello</h1>
+        <div class="container-fluid vh-100 my-bg">
+            <div class="row justify-content-center align-items-center vh-100">
+                <div class="col-12 col-md-8">
+                    <h1>Unlimited movies, TV shows, and more.</h1>
+                    <h4>Watch anywhere. Cancel anytime</h4>
+                    <p>Ready to watch? Enter your email to create or restart your membership</p>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <form action="{{route('start')}}" method="get">
+                                <div class="col-10">
+                                    <input type="email" class="css-input" name="emailStart" placeholder="Email address" />
+                                    <button type="submit" class="my-btn">Get Started ></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     @endguest
 </x-layout>

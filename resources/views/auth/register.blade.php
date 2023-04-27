@@ -13,7 +13,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Indirizzo email</label>
-                        <input type="email" class="form-control @error('email') is-invalid @enderror" name="email">
+                        <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $emailStart ?? '' }}">
                         @error('email')
                         <div class="alter text-dander">{{ $message }}</div>
                         @enderror
