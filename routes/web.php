@@ -19,3 +19,5 @@ Route::get('/', function () {
 })->name('welcome');
 
 Route::get('formCreate', [MovieController::class, 'showForm'])->name('showForm');
+
+Route::post('created', [MovieController::class, 'addMovie'])->name('add.movie');

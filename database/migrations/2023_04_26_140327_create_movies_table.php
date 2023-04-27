@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('movieTitle');
             $table->text('movieDescription');
-            $table->decimal('movieDuration', 2);
+            $table->decimal('movieDuration', 8, 5);
             $table->string('genre');
-            $table->integer('pegi');
+            $table->decimal('pegi', 8, 5);
             $table->timestamps();
         });
     }

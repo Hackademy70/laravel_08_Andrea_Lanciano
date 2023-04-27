@@ -6,7 +6,8 @@
             <div class="row">
                 <div class="col-8">
                     {{-- Insert a Movie --}}
-                    <form method="post" action="">
+                    <form method="post" action="{{ route('add.movie') }}">
+                        @csrf
                         <div class="mb-3">
                             <label for="movieTitle" class="form-label">Title</label>
                             <input type="text" class="form-control" name="movieTitle" aria-describedby="emailHelp">

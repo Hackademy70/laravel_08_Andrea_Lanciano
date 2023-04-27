@@ -9,11 +9,11 @@
                     <form method="post" action="">
                         <div class="mb-3">
                             <label for="movieTitle" class="form-label">Title</label>
-                            <input type="text" class="form-control" name="movieTitle" aria-describedby="emailHelp">
+                            <input type="text" class="form-control" name="movieTitle">
                         </div>
                         <div class="mb-3">
                             <label for="genre" class="form-label">genre</label>
-                            <input type="text" class="form-control" name="genre" aria-describedby="emailHelp">
+                            <input type="text" class="form-control" name="genre">
                         </div>
                         <div class="mb-3">
                             <label for="movieDescription" class="form-label"></label>
