@@ -18,9 +18,10 @@ use App\Http\Controllers\PublicController;
 Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
-
+// Home -> register con email
 Route::get('/start', [PublicController::class, 'start'])->name('start');
 
+// Show AddMovieForm after login
 Route::get('formCreate', [MovieController::class, 'showForm'])->name('showForm');
-
+// Add a movie after login
 Route::post('created', [MovieController::class, 'addMovie'])->name('add.movie');

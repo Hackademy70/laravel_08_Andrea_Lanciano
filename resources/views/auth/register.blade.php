@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container">
+    <div class="container mt-5 mb-3">
         <div class="row">
             <div class="col-12 col-md-8">
                 <form method="post" action="{{ route('register') }}">
@@ -32,7 +32,7 @@
                         <div class="alter text-dander">{{ $message }}</div>
                         @enderror
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="my-btn">Sign Up</button>
                 </form>
             </div>
         </div>

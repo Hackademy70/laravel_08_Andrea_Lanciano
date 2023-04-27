@@ -17,6 +17,7 @@
                     <h1>Unlimited movies, TV shows, and more.</h1>
                     <h4>Watch anywhere. Cancel anytime</h4>
                     <p>Ready to watch? Enter your email to create or restart your membership</p>
+                    {{-- Indirizzamento alla Register con email --}}
                     <div class="container-fluid">
                         <div class="row">
                             <form action="{{route('start')}}" method="get">
